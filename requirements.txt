@@ -1,0 +1,13 @@
+# For Data Loading, Analysis, and Manipulation (IMDb part)
+pandas
+numpy
+
+# For Kafka Stream Processing (Wikimedia part)
+kafka-python
+requests 
+sseclient
+streamlit
+
+# Optional: For better data visualization in your notebook
+matplotlib
+seaborn

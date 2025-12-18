@@ -1,0 +1,41 @@
+# --- Environnement Virtuel ---
+# Exclure le dossier de l'environnement virtuel (très important !)
+.venv/
+venv/
+env/
+*.pyc
+__pycache__/
+
+# --- Fichiers Spécifiques à l'OS ---
+.DS_Store
+Thumbs.db
+
+# --- Fichiers Jupyter Notebook ---
+# Fichiers temporaires générés par le notebook
+.ipynb_checkpoints
+
+# --- Fichiers Temporaires et Logs ---
+*.log
+*.tmp
+*.temp
+
+# --- Fichiers de Données IMDB (Si téléchargement manuel) ---
+# Si vous avez dû manuellement télécharger les .tsv.gz, ne pas les inclure.
+# Si le Notebook télécharge tout par code, ces lignes ne sont pas strictement nécessaires
+# mais elles protègent contre l'ajout accidentel de fichiers volumineux.
+*.tsv
+*.tsv.gz
+data/
+
+# --- Fichiers Output Générés par le Pipeline Kafka ---
+# Bien que vous deviez inclure les versions finales pour la soumission (stream_metrics.json, stream_alerts.log),
+# Il est souvent préférable de ne pas suivre les versions en cours de ces fichiers dans Git pour éviter les conflits.
+# Cependant, pour ce projet, nous allons les *laisser de côté* pour le moment et les ajouter explicitement
+# au commit final si besoin, car ce sont des livrables !
+#
+# Si vous aviez une base de données locale (SQLite, etc.), vous l'ignoreriez ici :
+# *.db
+
+# --- Fichiers Streamlit ---
+# Dossiers de cache Streamlit
+.streamlit/
