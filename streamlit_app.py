@@ -6,8 +6,6 @@ import time
 from datetime import datetime
 
 # --- File Path Configuration ---
-# Ces fichiers sont générés par le consommateur Kafka (project.py)
-# FIX 1: Correction du nom de fichier pour correspondre à l'output réel
 METRICS_FILE = 'stream_metrics.json' 
 ALERTS_FILE = 'stream_alerts.log'
 
@@ -94,7 +92,7 @@ while True:
             st.subheader("2. Detailed Event Counts")
             st.markdown("##### Events per Tracked Entity")
             
-            # FIX 2: Correction de la clé : utiliser 'entity_counts' au lieu de 'events_per_entity'
+            # utiliser 'entity_counts' au lieu de 'events_per_entity'
             entity_data = metrics.get("entity_counts", {}) 
             
             if entity_data:

@@ -5,8 +5,6 @@ from datetime import datetime
 import time
 
 # --- Configuration ---
-# You would need to determine the actual bootstrap server for the Wikimedia Events Platform
-# or, more practically, for your local Kafka broker which is ingesting the Wikimedia stream.
 KAFKA_BOOTSTRAP_SERVERS = ['localhost:9092'] 
 WIKIMEDIA_TOPIC = 'wikimedia.recentchange' # The public topic name (or your intermediate topic)
 ENTITIES_TO_TRACK = [
